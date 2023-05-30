@@ -5,4 +5,146 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <header class="page-header">
+      <a class="logo" href="index.html"> <img src="#" alt="Логотип компании"></a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="active" href="#">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a href="#"> <span class="visually-hidden">Поиск</span></a>
+          </li>
+          <li class="navigation-item">
+            <a href="#"><span class="visually-hidden">Нравится</span></a>
+          </li>
+          <li class="navigation-item">
+            <a  class="navigation-button" href="#">Хочу сюда!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <header class="header-iner">
+        <h1 class="header-inner--title">Гостиницы седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">
+              <img src="#" alt="Домой">
+              <span class="visually-hidden">Главная</span>
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ul>
+    </header>
+    <main class="main-iner">
+        <h2 class="visually-hidden">Поиск жилья</h2>
+        <section class="filter">
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset>
+          <legend>Инфраструктура:</legend>
+          <div class="filter-wrapper">
+            <label class="conteiner">
+            <input class="conteiner-link" type="checkbox" name="Pool" checked >Бассейн
+          </label>
+          </div>
+          <div class="filter-wrapper">
+            <label class="conteiner">
+              <input class="conteiner-link" type="checkbox" name="parcking" checked>Парковка
+            </label>
+          </div>
+          <div class="filter-wrapper">
+            <label class="conteiner">
+              <input class="conteiner-link" type="checkbox" name="Wi-fi">Wi-Fi
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Тип Жилья:</legend>
+          <div class="filter-wrapper">
+            <label class="conteiner">
+            <input class="conteiner-link" type="radio" name="Hotel" checked >Гостиница
+          </label>
+          </div>
+          <div class="filter-wrapper">
+            <label class="conteiner">
+              <input class="conteiner-link" type="radio" name="Motel">Мотель
+            </label>
+          </div>
+          <div class="filter-wrapper">
+            <label class="conteiner">
+              <input class="conteiner-link" type="radio" name="apartment" >Апартаменты
+            </label>
+          </div>
+        </fieldset>
+          <button class="button-catalog-filter" type="sybmit" >Применить</button>
+          <button class="button-catalog-filter" type="button" >Сбросить</button>
+          <div class="cost-wrapper">
+          <fieldset class="filter-wrapper">
+            <legend>Стоимость в сутки (Р):</legend>
+            <div class="day-cost">
+              <div class="cost-field field-one">
+                <label class="cost-label" for="from">От</label>
+                <input class="cost-input" type="text" name="from" id="from" placeholder="0">
+              </div>
+              <div class="cost-field field-two">
+                <label class="cost-label" for="to">До</label>
+                <input class="cost-input" type="text" name="to" id="to" placeholder="3000">
+              </div>
+            </div>
+            <div class="cost-slider">
+              <div class="slider-bar"></div>
+              <div class="slider-circle circle-left"></div>
+              <div class="slider-circle circle-right"></div>
+            </div>
+          </fieldset>
+        </form>
+
+          <input class="btn btn-display" type="submit" value="Показать">
+        </div>
+      </section>
+      <section class="subscribe">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <label>
+            <input class="subscribe-fielder" type="Email" name="email-fielder" placeholder="Ваш Email">
+          </label>
+          <button class="subscribe-button" type="submit">Подписаться</button>
+        </form>
+      </section>
+    </main >
+    <footer class="main-footer">
+      <ul class="social-list">
+        <li class="social-item">
+            <a href="#">
+                <img src="#"alt="VK">
+            </a>
+        </li>
+        <li class="social-item">
+            <a href="#">
+                <img src="#"alt="Telegram">
+            </a>
+        </li>
+        <li class="social-item">
+            <a href="#">
+                <img src="#" alt="YouTube">
+            </a>
+        </li>
+    </ul>
+</li>
+</ul>
+<p class="phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a></p>
+<a href="#"><img src="#" alt="HTML Academy"></a>
+    </footer>
   </body>
+</html>
