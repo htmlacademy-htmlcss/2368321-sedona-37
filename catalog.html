@@ -86,31 +86,126 @@
             </label>
           </div>
         </fieldset>
-          <button class="button-catalog-filter" type="sybmit" >Применить</button>
-          <button class="button-catalog-filter" type="button" >Сбросить</button>
+
           <div class="cost-wrapper">
           <fieldset class="filter-wrapper">
-            <legend>Стоимость в сутки (Р):</legend>
+            <legend class="conteiner">Стоимость, ₽:</legend>
             <div class="day-cost">
               <div class="cost-field field-one">
                 <label class="cost-label" for="from">От</label>
-                <input class="cost-input" type="text" name="from" id="from" placeholder="0">
+                <input class="cost-input" type="number" name="from" placeholder="0">
               </div>
               <div class="cost-field field-two">
                 <label class="cost-label" for="to">До</label>
-                <input class="cost-input" type="text" name="to" id="to" placeholder="3000">
+                <input class="cost-input" type="number" name="to" placeholder="9000">
               </div>
-            </div>
-            <div class="cost-slider">
-              <div class="slider-bar"></div>
-              <div class="slider-circle circle-left"></div>
-              <div class="slider-circle circle-right"></div>
-            </div>
+              <div class="cost-range">
+                <button class="button-range" type="button">
+                  <spann class="visually-hidden">установить минимальную стоимость</spann>
+                </button>
+                <button class="button-range" type="button">
+                  <spann class="visually-hidden">установить максимальную стоимость</spann>
+                </button>
+              </div>
           </fieldset>
+          <button class="button-catalog-filter" type="sybmit" >Применить</button>
+          <button class="button-catalog-filter" type="reset" >Сбросить</button>
         </form>
-
-          <input class="btn btn-display" type="submit" value="Показать">
-        </div>
+      </section>
+      <section class="catalog-search">
+        <b class="catalog-search-title">Найдено гостиниц:38</b>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешевые</option>
+          <option value="popular">Сначала популярные</option>
+          <option value="expensive">Сначала дорогие</option>
+        </select>
+        <a href="#" class="button button-light">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <ul class="product-list">
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-image" src="#" alt="Amara Resort & Spa">
+              <h3 class="product-card-title">Amara Resort & Spa</h3>
+            </a>
+            <span class="product-card-price">Гостиница           От 4000 ₽</span>
+            <a class="product-card-button button" href="#">Подробнее</a>
+            <button type="button" name="favorites">В избранное</button>
+            <div class="reiting">
+              <p class="reiting-hotel">
+                <span class="visually-hidden">четыре звезды из пяти</span>
+                <img class="stars" src="#" alt="Одна звезда">
+                <img class="stars" src="#" alt="Вторая звезда">
+                <img class="stars" src="#" alt="Третья звезда">
+                <img class="stars" src="#" alt="Четвертая звезда">
+              </p>
+              <p class="rate">Рейтинг:
+                <span class="rate-value">8,5</span>
+              </p>
+            </div>
+          </li>
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-image" src="#" alt="Villas at Poco Diablo">
+              <h3 class="product-card-title">Villas at Poco Diablo</h3>
+            </a>
+            <span class="product-card-price">Гостиница           От 5000 ₽</span>
+            <a class="product-card-button button" href="#">Подробнее</a>
+            <button type="button" name="favorites">В избранное</button>
+            <div class="reiting">
+              <p class="reiting-hotel">
+                <span class="visually-hidden">четыре звезды из пяти</span>
+                <img class="stars" src="#" alt="Одна звезда">
+                <img class="stars" src="#" alt="Вторая звезда">
+                <img class="stars" src="#" alt="Третья звезда">
+                <img class="stars" src="#" alt="Четвертая звезда">
+              </p>
+              <p class="rate">Рейтинг:
+                <span class="rate-value">9,2</span>
+              </p>
+            </div>
+          </li>          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-image" src="#" alt="Desert Quail Inn">
+              <h3 class="product-card-title">Desert Quail Inn</h3>
+            </a>
+            <span class="product-card-price">Гостиница           От 2500 ₽</span>
+            <a class="product-card-button button" href="#">Подробнее</a>
+            <button type="button" name="favorites">В избранное</button>
+            <div class="reiting">
+              <p class="reiting-hotel">
+                <span class="visually-hidden">три звезды из пяти</span>
+                <img class="stars" src="#" alt="Одна звезда">
+                <img class="stars" src="#" alt="Вторая звезда">
+                <img class="stars" src="#" alt="Третья звезда">
+              </p>
+              <p class="rate">Рейтинг:
+                <span class="rate-value">6,9</span>
+              </p>
+            </div>
+          </li>
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-image" src="#" alt="GreenTree Inn">
+              <h3 class="product-card-title">GreenTree Inn</h3>
+            </a>
+            <span class="product-card-price">Гостиница           От 1500 ₽</span>
+            <a class="product-card-button button" href="#">Подробнее</a>
+            <button type="button" name="favorites">В избранное</button>
+            <div class="reiting">
+              <p class="reiting-hotel">
+                <span class="visually-hidden">две звезды из пяти</span>
+                <img class="stars" src="#" alt="Одна звезда">
+                <img class="stars" src="#" alt="Вторая звезда">
+              </p>
+              <p class="rate">Рейтинг:
+                <span class="rate-value">5,0</span>
+              </p>
+            </div>
+          </li>
       </section>
       <section class="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
