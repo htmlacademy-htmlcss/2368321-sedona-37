@@ -7,8 +7,8 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="logo" href="index.html"> <img src="images/logo.svg" width="140" heigh=70; alt="Логотип компании."></a>
       <nav class="navigation">
+        <a class="logo" href="index.html"> <img src="images/logo.svg" width="140" heigh=70; alt="Логотип компании."></a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link navigation-active" href="index.html">Главная</a>
@@ -20,9 +20,9 @@
             <a class="navigation-link navigation-active" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list ">
+        <ul class="navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link navigation-user" href="#"> <span class="visually-hidden">Поиск</span></a>
+            <a class="navigation-link navigation-search" href="#"> <span class="visually-hidden">Поиск</span></a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link like" href="#"><span class="visually-hidden">Нравится</span></a>
@@ -33,56 +33,66 @@
         </ul>
       </nav>
     </header>
-    <main class="main-page">
+    <main class="main-conteiner main-page">
+      <div class="page-container">
       <div class="main-image"><h1 class="visually-hidden">Главная страница о городе Седонне</h1>
       <img class="main-logo" src="images/welcome-title.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
       </div>
       <section class="advantages">
-        <h2 class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <h2 class="advantages-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
         <p class="advantages-text"> Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="advantages-list">
           <li class="advantages-item">
-            <h3 class="subtitle advantages-item-title">Настоящий городок</h3>
+            <div class="advantages-wrapper">
+            <h3 class="advantages-item-title">Настоящий городок</h3>
             <p class="advantages-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
             <img class="advantages-image" src="images/advantages-home.jpg" width="800" height="385" alt="Фото улицы в городе Седона.">
           </li>
+
           <li class="advantages-item">
-            <h3 class="subtitle advantages-item-title">Небольшая
+            <h3 class="advantages-item-title">Небольшая
               площадь</h3>
               <p class="advantages-item-text">Все достопримечательности находятся очень близко</p>
           </li>
           <li class="advantages-item color">
-            <h3 class="subtitle advantages-item-title">Красивая
+            <h3 class="advantages-item-title">Красивая
               дорога</h3>
               <p class="advantages-item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantages-item">
-            <h3 class="subtitle advantages-item-title">Мало
+            <h3 class="advantages-item-title">Мало
               туристов</h3>
               <p class="advantages-item-text">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li class="advantages-item">
+
+          <li class="advantages-item advantages-bridge">
+            <div class="advantages-wrapper">
             <h3 class="subtitle advantages-item-title">Там есть
               мост дьявола</h3>
             <p class="advantages-item-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
             <img class="advantages-image" src="images/advantages-mountains.jpg" width="800" height="385" alt="Мост дьявола в Седоне.">
           </li>
+
         </ul>
       </section>
       <section class="service">
-        <h2 class="service-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+        <div class="service-conteiner">
+        <h2 class="service-title">Приезжайте в Седону отдохнуть <br>в комфорте и уюте!</h2>
         <p class="service-title-text">Опытный персонал и качественное обслуживание!</p>
+        </div>
         <ul class="service-list">
           <li class="service-item service-housing">
-            <h3>Жильё</h3>
+            <h3 class="service-item-title">Жильё</h3>
             <p class="service-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="service-item service-food">
-            <h3>Еда</h3>
+            <h3 class="service-item-title">Еда</h3>
             <p class="service-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="service-item service-souvenir">
-            <h3>Сувениры</h3>
+            <h3 class="service-item-title">Сувениры</h3>
             <p class="service-text">Не только китайского,но и настоящего местного производства!</p>
           </li>
         </ul>
@@ -95,7 +105,7 @@
       <section class="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <form class="subscribe-form"action="https://echo.htmlacademy.ru/courses" method="post">
           <label>
             <input class="subscribe-fielder" type="Email" name="email-fielder" placeholder="Ваш Email">
           </label>
@@ -103,8 +113,10 @@
         </form>
 
       </section>
+      </div>
     </main>
     <footer class="main-footer">
+      <div class="footer-social">
       <ul class="social-list">
         <li class="social-item">
             <a class="social-link" href="#">
@@ -143,6 +155,7 @@
   <path d="M98.2 18.2564C96.6 18.2564 95.3 19.0564 94.6 20.2564H94.5C93.9 19.0564 92.7 18.2564 91.1 18.2564C89.7 18.2564 88.6 18.9564 88 20.0564V18.5564H86.1V29.1564H88.1V23.7564C88.1 21.7564 89.1 20.3564 90.7 20.2564C92.2 20.2564 93.1 21.2564 93.1 22.8564V29.1564H95.1V23.5564C95.1 21.1564 96.5 20.2564 97.7 20.2564C99.2 20.2564 100.1 21.2564 100.1 22.8564V29.1564H102.1V22.6564C102.2 20.0564 100.7 18.2564 98.2 18.2564Z" fill="black"/>
   <path d="M109.4 27.3564L105.8 18.4564H103.6L108.4 30.0564C108.1 30.9564 107.7 31.2564 106.7 31.2564H104.2V33.2564H106.7C108.5 33.2564 109.5 32.4564 110.2 30.6564L114.9 18.4564H112.8L109.4 27.3564Z" fill="black"/>
   </svg></a>
+      </div>
     </footer>
 
   </body>
