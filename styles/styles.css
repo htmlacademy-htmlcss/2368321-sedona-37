@@ -668,7 +668,7 @@ background-position: center;
 .stars{
   background-image: url("../images/stars.svg");
   background-repeat: repeat-x;
-  height: 17px;
+  height: 18px;
 }
 .stars-4{
   width: 72px;
