@@ -719,11 +719,9 @@ body {
 
 .product-card {
   border: 1px solid #E6E6E6;
-  margin: 0;
-  padding: 0;
   display: grid;
-  grid-template-columns: 19px 150px 150px 19px;
-  grid-template-rows: 20px 212px min-content min-content min-content auto 20px;
+  grid-template-columns: 19.2px 150px 150px 19.2px;
+  grid-template-rows: 20px auto auto auto auto auto 20px;
 }
 .product-card-image{
     grid-column: 2/3;
@@ -747,7 +745,6 @@ body {
 .product-list.type{
   grid-column: 2/3;
   grid-row:4;
-  margin-right: 16px;
 }
 .product-list.cost{
   grid-column: 3/4;
@@ -761,7 +758,6 @@ body {
   color: #ffffff;
   background-color: #756157;
   text-transform: uppercase;
-  border: 1px solid #756157;
   border-radius: 4px;
   text-decoration: none;
   padding: 8px 0 8px 0;
@@ -822,7 +818,6 @@ body {
   color: #333333;
   grid-column: 3/4;
   grid-row:6;
-  width:140px;
   margin:0 0 0 10px;
   padding: 9px 0 8px 0;
   text-align: center;
