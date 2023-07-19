@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="logo" href="index.html"> <img src="images/logo.svg" width="140" height="70" alt="Логотип компании."></a>
         <ul class="navigation-list">
@@ -41,7 +41,7 @@
       </nav>
     </header>
 
-    <main class="main-container main-inner">
+    <main class="main-container main-inner" data-test="main">
       <div class="header-block">
         <header class="header-inner">
           <h1 class="header-iner-title">Гостиницы Седоны</h1>
@@ -55,7 +55,7 @@
               <p class="breadcrumbs-hotels">Гостиницы</p>
             </li>
           </ul>
-          <section class="filter">
+          <section class="filter" data-test="filter">
             <h2 class="visually-hidden">Поиск жилья</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
@@ -122,7 +122,7 @@
           </section>
         </header>
       </div>
-      <section class="catalog-search">
+      <section class="catalog-search" data-test="catalog">
         <div class="sort-wrapper">
           <h2 class="visually-hidden">Результаты поиска</h2>
           <span class="catalog-search-title">Найдено гостиниц: 38</span>
@@ -227,7 +227,7 @@
           </li>
         </ul>
       </section>
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/courses" method="get">
@@ -275,6 +275,75 @@
         </a>
       </div>
     </footer>
+    <div class="modal-container modal-close">
+      <div class="modal" data-test="modal">
+        <button class="close-button" type="button">
+          <span class="visually-hidden">Закрыть.</span>
+        </button>
+        <h2 class="modal-title">поиск гостиницы в седоне</h2>
+        <form action="https://echo.htmlacademy.ru/" method="post" class="modal-form">
+          <div class="modal-form-data">
+            <label class="model-form-label" for="check-in">Дата Заезда:</label>
+            <input type="text" class="modal-form-input" placeholder="Укажите дату" value="27 апреля 2020" id="check-in">
+            <span class="data-check-in error">Мы не можем отправить вас в прошлое.</span>
+          </div>
+          <div class="modal-form-data">
+            <label class="model-form-label" for="departure">Дата Выезда:</label>
+            <input type="text" class="modal-form-input" placeholder="Укажите дату" value="1 сентября 2023"
+              id="departure">
+            <span class="data-check-in">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+          <div class="guests-count adults-count">
+            <label class="model-form-label" for="adults">Взрослые:</label>
+            <div class="counter">
+              <button class="count-button count-minus" type="button">
+                <svg class="count-svg" width="14" height="2" viewBox="0 0 14 2" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M0.392822 0L0.392822 2L14.3928 2V0L0.392822 0Z" />
+                </svg>
+                <span class="visually-hidden">Убавить на один.</span>
+              </button>
+              <input class="count-input" type="number" id="adults" name="adults" min="0" max="10" value="2" required>
+              <button class="count-button count-plus" type="button">
+                <svg class="count-svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                </svg>
+                <span class="visually-hidden">Прибавить на один.</span>
+              </button>
+            </div>
+          </div>
+          <div class="guests-count kids-count">
+            <label class="model-form-label" for="kids">Дети:</label>
+            <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+              <span class="tooltip-text" id="tooltip-label">Укажите количество детей, которые
+                будут с вами, возраст которых от 6 до 18
+                лет. Дети до 6 лет размещаются бесплатно.
+              </span>
+            </button>
+            <div class="counter">
+              <button class="count-button count-minus" type="button">
+                <svg class="count-svg" width="14" height="2" viewBox="0 0 14 2" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                  <path d="M0.392822 0L0.392822 2L14.3928 2V0L0.392822 0Z" />
+                </svg>
+                <span class="visually-hidden">Убавить на один.</span>
+              </button>
+              <input class="count-input" type="number" id="kids" name="kids" min="0" max="10" value="2"
+                required>
+              <button class="count-button count-plus" type="button">
+                <svg class="count-svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                </svg>
+                <span class="visually-hidden">Прибавить на один.</span>
+              </button>
+            </div>
+          </div>
+          <button class="appointment-submit" type="submit">Найти</button>
+        </form>
+      </div>
+    </div>
   </body>
 
 </html>
