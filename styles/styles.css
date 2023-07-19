@@ -1249,6 +1249,9 @@ background-color: #615048;
   border-radius: 30px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
+.modal-close{
+  display: none;
+}
 
 .modal-title {
   margin: 0 0 64px 0;
